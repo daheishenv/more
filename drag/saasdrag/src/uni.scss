@@ -1,0 +1,11 @@
+@import "~zzsp-saas-ui/common/theme.scss";
+
+$ossImgUrl: "https://static-saas.zzsupei.com/saas/";
+
+$phoneWidth: 375px;
+$phoneHeight: 667px;
+$rote: 0.2;
+
+$windowsWidth: $phoneWidth / 0.2;
+
+$onePx: $windowsWidth / 750 * 0.2;

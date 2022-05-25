@@ -1,0 +1,233 @@
+body,
+* {
+    font-family: "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
+}
+
+html {
+    background-color: #f3f5f6;
+}
+
+html,
+body,
+#__nuxt,
+#__layout,
+#__layout>div {
+    height: 100%;
+}
+
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.theme_color {
+    background-color: #f65c2c;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.isMobile {
+    display: none;
+}
+
+.isPc {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .isMobile {
+        display: block;
+    }
+
+    .isPc {
+        display: none;
+    }
+}
+
+/*滚动条整体样式*/
+::-webkit-scrollbar {
+    // width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    // height: 1px;
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: #071142;
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+    border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+::-moz-placeholder {
+    //不知道为何火狐的placeholder的颜色是粉红色，怎么改都不行，希望有大牛路过帮忙指点
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    //由于我的IE刚好是IE9，支持不了placeholder，所以也测试不了(⊙﹏⊙)，有IE10以上的娃可以帮我试试
+    color: #999;
+}
+
+/*
+  流式布局
+*/
+.flex {
+    @include flex(row);
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/*
+  不加宽度会有溢出bug
+*/
+.flex-1 {
+    position: relative;
+    flex: 1;
+    width: 50%;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.full-width {
+    width: 100%;
+    display: block;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.commont-title {
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 3px;
+        border-radius: 4px;
+        background: #fa7b20;
+    }
+}
+
+.hover {
+    transition: all 0.2s linear 0s;
+}
+
+.hover:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    // .fp-section > div {
+    //     opacity: 0;
+    //     position: relative;
+    //     transform: translateY(100%);
+    //     // transform: scale(0.75);
+    //     @include tst(all, 0.3s, 0.2s);
+    // }
+
+    // .fp-section > .page-load {
+    //     // transform: scale(1);
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //     top: 0;
+    // }
+}
+
+// 定义内外边距，历遍1-80
+@for $i from 0 through 100 {
+
+    // 只要双数和能被5除尽的数
+    @if $i % 5==0 {
+
+        // ptb30 plr30 p24
+        .ptb#{$i} {
+            padding-top: $i + px !important;
+            padding-bottom: $i + px !important;
+        }
+
+        .plr#{$i} {
+            padding-left: $i + px !important;
+            padding-right: $i + px !important;
+        }
+
+        .p#{$i} {
+            padding: $i + px !important;
+        }
+
+        @each $short,
+        $long in l left,
+        t top,
+        r right,
+        b bottom {
+
+            // 缩写版，结果如： ml30
+            .m#{$short}#{$i} {
+                margin-#{$long}: $i + px !important;
+            }
+
+            .p#{$short}#{$i} {
+                padding-#{$long}: $i + px !important;
+            }
+        }
+    }
+}
+
+.el-message {
+    top: 80px !important;
+}
+
+.c-bg-fff {
+    background: #fff;
+}

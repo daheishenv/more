@@ -1,0 +1,53 @@
+{
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "^c-(((?!style).)*)$": "@/common/components/c-$1/c-$1.vue", // 基础组件
+            "^c-(.*)-([?=style].*)": "@/common/components/c-$1/$2.vue", // 基础组件
+            "^gc-(((?!style).)*)$": "@/components/$1/$1.vue", // 全局组件（例如：gc-list）
+            "^gc-(.*)-([?=style].*)": "@/components/$1/$2.vue", // 全局组件（例如：gc-list-style1）
+            "^sub-([^-]+)-(((?!style).)*)$": "@/$1/components/$2/$2.vue", // 分包下的组件（例如：sub-home-matrix-menu）
+            "^sub-([^-]+)-(.*)-([?=style].*)": "@/$1/components/$2/$3.vue" // 分包下的组件（例如：sub-home-matrix-menu-style1）
+        }
+    },
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/index/index",
+            "aliasPath": "/",
+            "name": "home",
+            "style": {
+                "titleNView": false
+            }
+        },
+        {
+            "path": "pages/classify/index",
+            "aliasPath": "/classify",
+            "name": "category",
+            "style": {
+                "titleNView": false
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "home",
+            "pages": [
+                {
+                    "path": "user/index",
+                    "name": "user",
+                    "style": {
+                        "titleNView": false
+                    }
+                }
+            ]
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "rpxCalcMaxDeviceWidth": 750,
+        "rpxCalcBaseDeviceWidth": 375
+    }
+}

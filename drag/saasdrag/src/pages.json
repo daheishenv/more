@@ -1,0 +1,28 @@
+{
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "^c-(.*)$": "zzsp-saas-ui/common/components/$1/$1.vue", // 基础组件
+            "^gc-(((?!style).)*)$": "@/components/$1/$1.vue", // 全局组件（例如：gc-list）
+            "^gc-(.*)-([?=style].*)": "@/components/$1/$2.vue", // 全局组件（例如：gc-list-style1）
+            "^sub-([^-]+)-(((?!style).)*)$": "@/$1/components/$2/$2.vue", // 分包下的组件（例如：sub-home-matrix-menu）
+            "^sub-([^-]+)-(.*)-([?=style].*)": "@/$1/components/$2/$3.vue" // 分包下的组件（例如：sub-home-matrix-menu-style1）
+        }
+    },
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/index/index",
+            "name": "home",
+            "aliasPath": "/",
+            "style": {
+                "titleNView": false
+            }
+        }
+    ],
+    "globalStyle": {
+        "titleNView": false,
+        "rpxCalcMaxDeviceWidth": 750,
+        "rpxCalcBaseDeviceWidth": 375,
+        "rpxCalcIncludeWidth": 40000
+    }
+}

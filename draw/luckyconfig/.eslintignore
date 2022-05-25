@@ -1,0 +1,8 @@
+*.hbuilderx
+build/*.js
+src/assets/**
+src/guest/explosive/video.nvue
+src/guest/components/uni-notice-bar/uni-notice-bar.vue
+node_modules/
+public/
+dist/*

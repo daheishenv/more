@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'drag'; /* Project id 2640701 */
+    src: url('//at.alicdn.com/t/font_2640701_asukrtie6y6.woff2?t=1639016874189') format('woff2'), url('//at.alicdn.com/t/font_2640701_asukrtie6y6.woff?t=1639016874189') format('woff'),
+        url('//at.alicdn.com/t/font_2640701_asukrtie6y6.ttf?t=1639016874189') format('truetype');
+}
+
+.drag {
+    font-family: 'drag' !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.drag-dingzhi:before {
+    content: '\e856';
+}
+
+.drag-shenqingbiaodan:before {
+    content: '\e6d4';
+}
+
+.drag-baopin:before {
+    content: '\e6d5';
+}
+
+.drag-zuigaoedu:before {
+    content: '\e7d4';
+}
+
+.drag-jinrongzixun:before {
+    content: '\e7cf';
+}
+
+.drag-yejiao:before {
+    content: '\e7d1';
+}
+
+.drag-jiazhuangfenqi:before {
+    content: '\e7d2';
+}
+
+.drag-reci01:before {
+    content: '\e67a';
+}
+
+.drag-reci04:before {
+    content: '\e6d3';
+}
+
+.drag-reci02:before {
+    content: '\e689';
+}
+
+.drag-reci03:before {
+    content: '\e690';
+}
+
+.drag-fenxiang4:before {
+    content: '\e6cd';
+}
+
+.drag-fenxiang6:before {
+    content: '\e6ce';
+}
+
+.drag-fenxiang5:before {
+    content: '\e6cf';
+}
+
+.drag-fenxiang3:before {
+    content: '\e6d0';
+}
+
+.drag-fenxiang1:before {
+    content: '\e6d1';
+}
+
+.drag-fenxiang2:before {
+    content: '\e6d2';
+}
+
+.drag-fenxiang:before {
+    content: '\e6cc';
+}
+
+.drag-fenlei_guanjianci:before {
+    content: '\e6ca';
+}
+
+.drag-biaodan:before {
+    content: '\e6cb';
+}
+
+.drag-xuanze:before {
+    content: '\e6c6';
+}
+
+.drag-xiala:before {
+    content: '\e6c7';
+}
+
+.drag-bianji:before {
+    content: '\e6c8';
+}
+
+.drag-liebiao:before {
+    content: '\e6c9';
+}
+
+.drag-sousuodaohang:before {
+    content: '\e6c5';
+}
+
+.drag-wenzidaohang:before {
+    content: '\e6c4';
+}
+
+.drag-shangpin:before {
+    content: '\e6c3';
+}
+
+.drag-mokuaibiaoti:before {
+    content: '\e6c2';
+}
+
+.drag-miaosha2:before {
+    content: '\e6bf';
+}
+
+.drag-daojishi1:before {
+    content: '\e6c0';
+}
+
+.drag-pintuan1:before {
+    content: '\e6c1';
+}
+
+.drag-jiacu:before {
+    content: '\e6ba';
+}
+
+.drag-changgui:before {
+    content: '\e6bb';
+}
+
+.drag-yibiyi:before {
+    content: '\e6b9';
+}
+
+.drag-shiliubijiu:before {
+    content: '\e6bc';
+}
+
+.drag-sanbisi:before {
+    content: '\e6bd';
+}
+
+.drag-sanbier:before {
+    content: '\e6be';
+}
+
+.drag-zujianguanli:before {
+    content: '\e6b3';
+}
+
+.drag-yemianshezhi:before {
+    content: '\e6b4';
+}
+
+.drag-youhuiquansan:before {
+    content: '\e6b5';
+}
+
+.drag-youhuiquanyi:before {
+    content: '\e6b6';
+}
+
+.drag-yihangyige1:before {
+    content: '\e6b7';
+}
+
+.drag-youhuiquaner:before {
+    content: '\e6b8';
+}
+
+.drag-a-CellularConnection:before {
+    content: '\e6b0';
+}
+
+.drag-Wifi:before {
+    content: '\e6b1';
+}
+
+.drag-Battery:before {
+    content: '\e6b2';
+}
+
+.drag-rexiaobaopin:before {
+    content: '\e6af';
+}
+
+.drag-daohangmorentu:before {
+    content: '\e6ae';
+}
+
+.drag-yihangyige:before {
+    content: '\e691';
+}
+
+.drag-yihangsige:before {
+    content: '\e692';
+}
+
+.drag-yihangerge:before {
+    content: '\e693';
+}
+
+.drag-yihangsange:before {
+    content: '\e694';
+}
+
+.drag-yizuosanyou:before {
+    content: '\e695';
+}
+
+.drag-youbianju:before {
+    content: '\e696';
+}
+
+.drag-yizuoeryou:before {
+    content: '\e697';
+}
+
+.drag-hengxianghuadong:before {
+    content: '\e698';
+}
+
+.drag-xiangxiliebiao:before {
+    content: '\e699';
+}
+
+.drag-yuanxingsousuokuang:before {
+    content: '\e69a';
+}
+
+.drag-kongbaifenge:before {
+    content: '\e69b';
+}
+
+.drag-shuanglieshipin:before {
+    content: '\e69c';
+}
+
+.drag-fengexianfenge:before {
+    content: '\e69d';
+}
+
+.drag-wubianju:before {
+    content: '\e69e';
+}
+
+.drag-juzhong:before {
+    content: '\e69f';
+}
+
+.drag-shixian:before {
+    content: '\e6a0';
+}
+
+.drag-juzuo:before {
+    content: '\e6a7';
+}
+
+.drag-erzuoeryou:before {
+    content: '\e6a8';
+}
+
+.drag-yishangerxia:before {
+    content: '\e6a9';
+}
+
+.drag-xuxian:before {
+    content: '\e6aa';
+}
+
+.drag-fangxingsousuokuang:before {
+    content: '\e6ab';
+}
+
+.drag-danlieshipin:before {
+    content: '\e6ac';
+}
+
+.drag-dianxian:before {
+    content: '\e6ad';
+}
+
+.drag-riqi:before {
+    content: '\e6a5';
+}
+
+.drag-shijian:before {
+    content: '\e6a6';
+}
+
+.drag-sousuolan:before {
+    content: '\e6a1';
+}
+
+.drag-daojishi:before {
+    content: '\e6a2';
+}
+
+.drag-shipin:before {
+    content: '\e6a3';
+}
+
+.drag-biaotiwenben:before {
+    content: '\e6a4';
+}
+
+.drag-renwumorentu:before {
+    content: '\e68e';
+}
+
+.drag-morentu:before {
+    content: '\e68f';
+}
+
+.drag-fuzhi:before {
+    content: '\e682';
+}
+
+.drag-shanchu:before {
+    content: '\e68a';
+}
+
+.drag-tianjia:before {
+    content: '\e68b';
+}
+
+.drag-guanbi:before {
+    content: '\e68c';
+}
+
+.drag-guanbi2:before {
+    content: '\e68d';
+}
+
+.drag-tuijianshangpin2:before {
+    content: '\e687';
+}
+
+.drag-zhengzhuangtaozhuang:before {
+    content: '\e688';
+}
+
+.drag-a-3Dzhanting:before {
+    content: '\e66b';
+}
+
+.drag-dianputuijian:before {
+    content: '\e66c';
+}
+
+.drag-juhuipintuan:before {
+    content: '\e66d';
+}
+
+.drag-kefu:before {
+    content: '\e66e';
+}
+
+.drag-anli:before {
+    content: '\e66f';
+}
+
+.drag-fengexian:before {
+    content: '\e670';
+}
+
+.drag-dianpuxinxi:before {
+    content: '\e671';
+}
+
+.drag-mingxingdingzhi:before {
+    content: '\e672';
+}
+
+.drag-kuaibao:before {
+    content: '\e673';
+}
+
+.drag-remenfenlei:before {
+    content: '\e674';
+}
+
+.drag-qiyejianjie:before {
+    content: '\e675';
+}
+
+.drag-qiyerongyu:before {
+    content: '\e676';
+}
+
+.drag-qiyedongtai:before {
+    content: '\e677';
+}
+
+.drag-lunbotu:before {
+    content: '\e678';
+}
+
+.drag-tupianmofang:before {
+    content: '\e679';
+}
+
+.drag-xianshimiaosha:before {
+    content: '\e67b';
+}
+
+.drag-tuijianzhuanti:before {
+    content: '\e67c';
+}
+
+.drag-shigongtuandui:before {
+    content: '\e67d';
+}
+
+.drag-tuwendaohang:before {
+    content: '\e67e';
+}
+
+.drag-xinrenzhuanxiang:before {
+    content: '\e67f';
+}
+
+.drag-zhibo:before {
+    content: '\e680';
+}
+
+.drag-yuyuehuodong:before {
+    content: '\e681';
+}
+
+.drag-youhuiquan:before {
+    content: '\e683';
+}
+
+.drag-zhuangxiufuwu:before {
+    content: '\e684';
+}
+
+.drag-shigonggongyi:before {
+    content: '\e685';
+}
+
+.drag-shejishi:before {
+    content: '\e686';
+}
+
+.drag-xiaojiantou-up:before {
+    content: '\e600';
+}
+
+.drag-morentupianfang:before {
+    content: '\e601';
+}
+
+.drag-a:before {
+    content: '\e604';
+}
